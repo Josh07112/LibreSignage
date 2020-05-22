@@ -4,28 +4,28 @@
 		type="button"
 		class="btn btn-success btn-slide-ctrl"
 		data-toggle="tooltip"
-		title="Create slide.">
+		title="Folie erstellen.">
 		<i class="fas fa-plus-circle"></i>
 	</button>
 	<button id="btn-slide-save"
 		type="button"
 		class="btn btn-success btn-slide-ctrl"
 		data-toggle="tooltip"
-		title="Save slide.">
+		title="Folie speichern.">
 		<i class="fas fa-save"></i>
 	</button>
 	<button id="btn-slide-duplicate"
 		type="button"
 		class="btn btn-success btn-slide-ctrl"
 		data-toggle="tooltip"
-		title="Duplicate slide.">
+		title="Folie kopieren.">
 		<i class="fas fa-copy"></i>
 	</button>
 	<button id="btn-slide-preview"
 		type="button"
 		class="btn btn-success btn-slide-ctrl"
 		data-toggle="tooltip"
-		title="Preview slide.">
+		title="Folie anzeigen.">
 		<i class="fas fa-eye"></i>
 	</button>
 	<div id="btn-slide-move"></div>

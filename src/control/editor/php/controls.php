@@ -1,16 +1,15 @@
 <!-- Slide status labels -->
 <div id="slide-label-readonly">
-	You can't edit this slide.
+	Sie können diese Folie nicht bearbeiten.
 </div>
 <div id="slide-label-edited">
-	You can't edit this slide because someone
-	else is already editing it.
+	Sie können diese Folie nicht bearbeiten, da sie bereits von jemand anderem verwendet wird.
 </div>
 <div id="slide-label-collaborate">
-	You can edit this slide as a collaborator.
+	Sie dürfen diese Folie als Kollaborateur bearbeiten.
 </div>
 <div id="slide-label-no-quota">
-	You can't create any more slides.
+	Sie dürfen keine weiteren Folien erstellen, da die Folienbegrenzung erreicht wurde.
 </div>
 
 <!-- Slide name input -->
@@ -26,7 +25,7 @@
 
 <!-- Slide owner label -->
 <div class="form-group" id="slide-owner-group">
-	<label for="slide-owner">Owner</label>
+	<label for="slide-owner">Besitzer</label>
 	<input type="text"
 		class="form-control w-100"
 		id="slide-owner"
@@ -38,30 +37,30 @@
 <!-- Slide collaborators multiselect -->
 <div class="form-group" id="slide-collab-group">
 	<label for="slide-collab">
-		Collaborators
+		Kollaborateure
 	</label>
 </div>
 
 <!-- Slide duration selector -->
 <div class="form-group" id="slide-duration-group">
-	<label for="slide-duration">Duration (seconds)</label>
+	<label for="slide-duration">Anzeigedauer (Sekunden)</label>
 	<input type="number" class="form-control w-100"
 		id="slide-duration"
 		data-toggle="tooltip"
-		title="The duration of the slide in seconds.">
+		title="Anzeigedauer der Folie in Sekunden.">
 	</input>
 	<div class="invalid-feedback"></div>
 </div>
 
 <!-- Slide index input -->
 <div class="form-group" id="slide-index-group">
-	<label for="slide-index">Index</label>
+	<label for="slide-index">Position</label>
 	<input type="number"
 		min="0"
 		class="form-control w-100"
 		id="slide-index"
 		data-toggle="tooltip"
-		title="The ordinal number of the slide. 0 is the first slide.">
+		title="Die Position der Folie in Zahlen. 0 ist die erste Folie">
 	<div class="invalid-feedback"></div>
 </div>
 
@@ -72,11 +71,11 @@
 		id="slide-animation"
 		data-toggle="tooltip"
 		title="Slide transition animation.">
-		<option value="0">No animation</option>
-		<option value="1">Swipe left</option>
-		<option value="2">Swipe right</option>
-		<option value="3">Swipe up</option>
-		<option value="4">Swipe down</option>
+		<option value="0">Keine Animation</option>
+		<option value="1">Nach links wischen</option>
+		<option value="2">Nach Rechts wischen</option>
+		<option value="3">Nach oben wischen</option>
+		<option value="4">Nach unten wischen</option>
 	</select>
 </div>
 
@@ -87,7 +86,7 @@
 		href="#slide-sched-group"
 		aria-expanded="false"
 		aria-controls="slide-sched-group">
-		<i class="fas fa-angle-right"></i> Slide scheduling
+		<i class="fas fa-angle-right"></i> Folienplanung
 	</a>
 </div>
 
@@ -97,45 +96,45 @@
 		<input type="checkbox"
 			id="slide-schedule-enable"
 			data-toggle="tooltip"
-			title="Select whether the slide is scheduled.">
+			title="Auswählen, ob für die Folie eine Folienplanung angelegt werden soll.">
 		<label class="form-check-label" for="slide-sched">
-			Enable
+			Aktiv
 		</label>
 	</div>
 	<div class="col-12 py-1">
 		<label for="slide-sched-date-s">
-			Start date
+			Startdatum
 		</label>
 		<input type="date"
 			id="slide-sched-date-s"
 			class="form-control d-inline"
 			data-toggle="tooltip"
-			title="The slide schedule start date.">
+			title="Das Startdatum der Folienplanung.">
 	</div>
 	<div class="col-12 py-1">
 		<input type="time"
 			id="slide-sched-time-s"
 			class="form-control d-inline"
 			data-toggle="tooltip"
-			title="The slide schedule start time."
+			title="Die Startzeit der Folienplanung."
 			step="1">
 	</div>
 	<div class="col-12 py-1">
 		<label for="slide-sched-date-e">
-			End date
+			Enddatum
 		</label>
 		<input type="date"
 			id="slide-sched-date-e"
 			class="form-control d-inline"
 			data-toggle="tooltip"
-			title="The slide schedule end date.">
+			title="Das Enddatum der Folienplanung.">
 	</div>
 	<div class="col-12 py-1">
 		<input type="time"
 			id="slide-sched-time-e"
 			class="form-control d-inline"
 			data-toggle="tooltip"
-			title="The slide schedule end time."
+			title="Die Endzeit der Folienplanung."
 			step="1">
 	</div>
 </div>
@@ -145,9 +144,9 @@
 	<input type="checkbox"
 		id="slide-enable"
 		data-toggle="tooltip"
-		title="Select whether the slide is enabled or not.">
+		title="Auswählen, ob die Folie aktiv ist.">
 	<label class="form-check-label"
 		for="slide-enabled">
-		Enable slide
+		Folie aktiv
 	</label>
 </div>

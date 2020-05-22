@@ -7,11 +7,11 @@ use libresignage\common\php\Config;
 <footer class="container-fluid footer d-flex align-items-center">
 	<div class="container-fluid">
 		<span>
-			LibreSignage <?php echo Config::config('LS_VER'); ?> &bull;
-			Copyright <?php echo '2018-'.date('Y'); ?> Eero Talus and contributors.
+			DHBW LibreSignage <?php echo Config::config('LS_VER'); ?> &bull;
+			Copyright <?php echo '2020-'.date('Y'); ?> Eero Talus, modifiziert und adaptiert von Claudio Gerth, Markus Tümmel und Joshua Jenkins
 			</br>
 			<a href="<?php echo Config::config('README_PAGE'); ?>">LibreSignage</a>
-			is free and open source software.
+			ist kostenlos und Open-Source Software.
 		</span>
 	</div>
 </footer>

@@ -3,11 +3,11 @@
 	<a class="link-nostyle"
 		data-toggle="collapse"
 		href="#slide-live-preview-collapse"
-		aria-expanded="false"
+		aria-expanded="true"
 		aria-controls="slide-live-preview-collapse">
-		<i class="fas fa-angle-right"></i> Live preview
+		<i class="fas fa-angle-right"></i> Live Anzeige
 	</a>
-	<div id="slide-live-preview-collapse" class="row collapse">
+	<div id="slide-live-preview-collapse" class="row collapse collapse show">
 		<div class="col-12 text-center">
 			<button id="btn-preview-ratio-16x9"
 					class="btn btn-light btn-border small-btn"

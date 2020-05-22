@@ -13,25 +13,35 @@
 						data-toggle="dropdown"
 						aria-haspopup="true"
 						aria-expanded="false">
-					Menu
+					Menü
 				</button>
+
 				<div class="dropdown-menu" aria-labelledby="editor-dropdown-menu-btn">
 					<button type="button"
 						class="dropdown-item"
 						id="btn-add-media">
-						Add media
+						Datei hochladen
 					</button>
 					<button type="button"
 						class="dropdown-item"
 						id="btn-quick-help">
-						Quick help
+						Hilfe
 					</button>
 				</div>
 			</div>
+
 		</div>
 	</div>
 
 	<div id="slide-input" class="rounded"></div>
+
+	<button id="btn-medien-hinzufügen"
+			class="btn btn-primary btn-lg"
+			type="button"
+			aria-haspopup="true"
+			aria-expanded="false">
+		Medien hinzufügen
+	</button>
 
 	<div class="container-fluid">
 		<p id="slide-label-editor-error"></p>

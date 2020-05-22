@@ -18,7 +18,7 @@ if (!$d) {
 }
 
 $NAV_PAGE_LINKS = array(
-	'Display' => array(
+	'Anzeigen' => array(
 		'uri' => Config::config('APP_PAGE'),
 		'active' => FALSE,
 		'groups' => NULL
@@ -28,22 +28,22 @@ $NAV_PAGE_LINKS = array(
 		'active' => FALSE,
 		'groups' => ['editor']
 	),
-	'User Manager' => array(
+	'Benutzerverwaltung' => array(
 		'uri' => Config::config('USER_MGR_PAGE'),
 		'active' => FALSE,
 		'groups' => ['admin']
 	),
-	'Settings' => array(
+	'Einstellungen' => array(
 		'uri' => Config::config('USER_SETTINGS_PAGE'),
 		'active' => FALSE,
 		'groups' => NULL
 	),
-	'Control Panel' => array(
+	'Konfiguration' => array(
 		'uri' => Config::config('CONTROL_PANEL_PAGE'),
 		'active' => FALSE,
 		'groups' => NULL
 	),
-	'Help' => array(
+	'Hilfe' => array(
 		'uri' => Config::config('DOCS_PAGE'),
 		'active' => FALSE,
 		'groups' => NULL
@@ -114,7 +114,7 @@ function _can_access_page(string $name) {
 						?>
 					]</a>
 					<a class="d-inline text-danger nav-link p-0 pl-1" href="/logout">
-						Logout
+						Abmelden
 					</a>
 				</div>
 			</div>
