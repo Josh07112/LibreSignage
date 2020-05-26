@@ -603,6 +603,23 @@ class EditorView extends BaseView {
 				},
 				defer: () => !this.state('ready')
 			}),
+			medien_hinzufügen: new UIButton({
+				elem: $('#btn-medien-hinzufügen'),
+				cond: d => (
+					d.slide.loaded
+					&& d.slide.locked
+					&& (d.slide.owned || d.slide.collaborate)
+				),
+				enabler: null,
+				attach: {
+					click: () => {
+						this.asset_uploader.show(
+							this.controller.get_slide()
+						);
+					}
+				},
+				defer: () => !this.state('ready')
+			}),
 			preview_16x9: new UIButton({
 				elem: $('#btn-preview-ratio-16x9'),
 				cond: () => this.preview.get_ratio() !== '16x9',
