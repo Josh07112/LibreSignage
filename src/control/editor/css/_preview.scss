@@ -14,8 +14,8 @@
 
 @import 'globals';
 
-$ratio-16x9-p: 9/16*200%;     // 16:9 aspect ratio multiplier.
-$ratio-4x3-p: 3/4*200%;       // 4:3 aspect ratio multiplier.
+$ratio-16x9-p: 9/16*100%;     // 16:9 aspect ratio multiplier.
+$ratio-4x3-p: 3/4*100%;       // 4:3 aspect ratio multiplier.
 $preview-mw: 600px;           // Preview min-width (vw > breakpoint).
 $preview-breakpoint: 1200px;  // Preview sizing breakpoint.
 
