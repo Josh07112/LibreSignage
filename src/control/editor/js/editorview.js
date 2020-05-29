@@ -721,7 +721,7 @@ class EditorView extends BaseView {
 		);
 
 		//Generierung des Markup Strings beim Drücken von "Speichern"
-		save_media: new UIButton({
+    save_media: new UIButton({
       elem: $('#btn-media-save'),
       cond: d => (
         d.slide.loaded
@@ -730,10 +730,17 @@ class EditorView extends BaseView {
       ),
       enabler: null,
       attach: {
-        click: () => {
+        click: async () => {
           var FileLink = document.getElementById('asset-uploader-file-link-input').value
           this.inputs.get('editor').set('[img url="' + FileLink + '" width=100% height=100%][/img]')
           console.warn('//To Do: getElementById ersetzen mit Object');
+          //Speichern des Slides nach Upload des Bilds
+          this.state('loading', true);
+          await this.save_slide();
+          this.state('loading', false);
+          //Schließen des Upload-Formulars
+          document.getElementById('asset-uploader').style.display = 'none';
+          //alert("Änderungen gespeichert.")
         }
       },
       defer: () => !this.state('ready')
