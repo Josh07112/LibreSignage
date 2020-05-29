@@ -1,8 +1,25 @@
 <div class="col-md container-fluid">
 	<div class="row py-2">
-		<div class="col-2 m-auto text-left">
-			<label for="slide-input" class="m-0">Markup</label>
+
+
+		<div class="col-12 container-fluid">
+			<a class="link-nostyle"
+				data-toggle="collapse"
+				href="#slide-input-collapse"
+				aria-expanded="true"
+				aria-controls="slide-input-collapse">
+				<i class="fas fa-angle-right"></i> Markup
+			</a>
+			<div id="slide-input-collapse" class="row collapse">
+				<div class="col-12 text-center">
+				</div>
+				<div class="col-12">
+						<div id="slide-input" class="rounded"></div>
+				</div>
+			</div>
 		</div>
+
+
 
 		<!-- Editor toolbar -->
 		<div class="col-10 text-right">
@@ -32,8 +49,6 @@
 
 		</div>
 	</div>
-
-	<div id="slide-input" class="rounded"></div>
 
 	<button id="btn-medien-hinzufügen"
 			class="btn btn-primary btn-lg"
