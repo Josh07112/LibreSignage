@@ -722,21 +722,24 @@ class EditorView extends BaseView {
 
 		//Generierung des Markup Strings beim Drücken von "Speichern"
 		save_media: new UIButton({
-			elem: $('#btn-media-save'),
-			cond: d => (
-				d.slide.loaded
-				&& d.slide.locked
-				&& (d.slide.owned || d.slide.collaborate)
-			),
-			enabler: null,
-			attach: {
-				click: () => {
-					alert("Debug")
-				}
-			},
-			defer: () => !this.state('ready')
-		}),
-		
+      elem: $('#btn-media-save'),
+      cond: d => (
+        d.slide.loaded
+        && d.slide.locked
+        && (d.slide.owned || d.slide.collaborate)
+      ),
+      enabler: null,
+      attach: {
+        click: () => {
+          var FileLink = document.getElementById('asset-uploader-file-link-input').value
+          this.inputs.get('editor').set('[img url="' + FileLink + '" width=100% height=100%][/img]')
+          console.warn('//To Do: getElementById ersetzen mit Object');
+        }
+      },
+      defer: () => !this.state('ready')
+    }),
+
+
 		/*
 		*  Initialize the input validators. All input validators except
 		*  the validators for the collaborators MultiSelect are defined
