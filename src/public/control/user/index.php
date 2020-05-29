@@ -63,7 +63,7 @@
 				<div class="form-group w-100">
 					<label class="col-form-label"
 						for="user-pass-confirm">
-						Confirm&nbsp;password
+						Passwort&nbsp;Bestätigen
 					</label>
 					<div id="user-pass-confirm-group"
 						class="p-0">
