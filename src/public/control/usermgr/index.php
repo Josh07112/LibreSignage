@@ -16,7 +16,7 @@
 		<?php CSS::req(['font-awesome']); ?>
 		<link rel="stylesheet" href="/control/usermgr/css/usermgr.css">
 		<?php require_once(Config::config('LIBRESIGNAGE_ROOT').'/common/php/favicon.php'); ?>
-		<title>LibreSignage User Manager</title>
+		<title>LibreSignage Benuterverwaltung</title>
 	</head>
 	<body>
 		<?php require_once(Config::config('LIBRESIGNAGE_ROOT').Config::config('NAV_PATH')); ?>
@@ -28,7 +28,7 @@
 					type="button"
 					id="btn-create-user"
 					class="btn btn-primary">
-					<i class="fas fa-plus-circle"></i> Create user
+					<i class="fas fa-plus-circle"></i> Benutzer erstellen
 				</button>
 			</div>
 		</div>

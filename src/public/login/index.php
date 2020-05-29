@@ -28,13 +28,13 @@
 					if (empty($_GET['failed'])) {
 						echo 'style="display: none"';
 					}?>>
-					<span>Incorrect username or password!</span>
+					<span>Benutzername oder Passwort nicht korrekt!</span>
 				</div>
 				<div class="container form-login">
 					<div class="form-group form-row">
 						<label for="input-user"
 							class="col col-form-label">
-							Username
+							Benutzername
 						</label>
 						<div class="col">
 							<input class="form-control"
@@ -47,7 +47,7 @@
 					<div class="form-group form-row">
 						<label for="input-pass"
 							class="col col-form-label">
-							Password
+							Passwort
 						</label>
 						<div class="col">
 							<input class="form-control"
@@ -73,7 +73,7 @@
 								href="#collapse-adv"
 								aria-expanded="false"
 								aria-controls="collapse-adv">
-								<i class="fas fa-angle-right"></i> Advanced
+								<i class="fas fa-angle-right"></i> Erweiterte Einstellungen
 							</a>
 						</div>
 					</div>
@@ -84,7 +84,7 @@
 								id="checkbox-perm-session">
 							<label class="form-check-label"
 								for="checkbox-perm-session">
-								Start a display session.
+								Eine Anzeigesitzung starten.
 							</label>
 						</div>
 					</div>

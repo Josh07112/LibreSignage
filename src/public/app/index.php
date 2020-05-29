@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="/app/css/display.css">
 		<?php CSS::req(['font-awesome']); ?>
 		<?php require_once(Config::config('LIBRESIGNAGE_ROOT').'/common/php/favicon.php'); ?>
-		<title>LibreSignage Display</title>
+		<title>LibreSignage Anzeige</title>
 	</head>
 	<body>
 		<main role="main" class="container-fluid">

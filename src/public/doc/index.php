@@ -51,7 +51,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="/doc/css/doc.css">
 		<?php require_once(Config::config('LIBRESIGNAGE_ROOT').'/common/php/favicon.php'); ?>
-		<title>LibreSignage Documentation</title>
+		<title>LibreSignage Benutzerdokumentation</title>
 	</head>
 	<body>
 		<main class="container-fluid h-100">

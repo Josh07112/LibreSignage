@@ -13,18 +13,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="/control/user/css/user.css">
 		<?php require_once(Config::config('LIBRESIGNAGE_ROOT').'/common/php/favicon.php'); ?>
-		<title>LibreSignage User Settings</title>
+		<title>LibreSignage Benutzereinstellungen</title>
 	</head>
 	<body>
 		<?php require_once(Config::config('LIBRESIGNAGE_ROOT').Config::config('NAV_PATH')); ?>
 		<main class="container-fluid">
 			<div class="user-settings-cont container mx-auto">
-				<h2>User settings</h2>
+				<h2>Benutzereinstellungen</h2>
 				<!-- Username -->
 				<div class="form-group w-100">
 					<label class="col-form-label"
 						for="user-name">
-						Username
+						Benutzername
 					</label>
 					<input id="user-name"
 						type="text"
@@ -37,7 +37,7 @@
 				<div class="form-group w-100">
 					<label class="col-form-label"
 						for="user-groups">
-							Groups
+							Gruppen
 					</label>
 					<input id="user-groups"
 						type="text"
@@ -51,7 +51,7 @@
 					class="form-group w-100">
 					<label class="col-form-label"
 						for="user-pass">
-						Password
+						Passwort
 					</label>
 					<input id="user-pass"
 							type="password"
@@ -84,7 +84,7 @@
 					</input>
 				</div>
 
-				<h2>Active sessions</h2>
+				<h2>Aktive Sitzungen</h2>
 				<div class="form-group w-100 text-center">
 					<table class="mx-auto text-left"
 						id="user-sessions">
