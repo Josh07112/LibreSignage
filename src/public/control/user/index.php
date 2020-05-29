@@ -95,7 +95,7 @@
 						class="btn btn-danger"
 						style="width: 100%"
 						id="btn-logout-other"
-						value="Logout other sessions">
+						value="Andere Sitzungen abmelden">
 				</div>
 			</div>
 		</main>
