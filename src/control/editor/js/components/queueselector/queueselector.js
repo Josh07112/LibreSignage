@@ -129,8 +129,8 @@ class QueueSelector {
 		new Promise((resolve, reject) => {
 			dialog.dialog(
 				dialog.TYPE.PROMPT,
-				'Queue name',
-				'Please enter a name for the new queue.',
+				'Anzeigestapel',
+				'Bitte geben Sie einen Namen für den neuen Stapel an.',
 				(action, val) => action ? resolve(val) : reject(),
 				[new StrValidator({
 					min: 1,
@@ -141,15 +141,15 @@ class QueueSelector {
 					min: null,
 					max: this.api.limits.QUEUE_NAME_MAX_LEN,
 					regex: null
-				}, "The queue name is too long."),
+				}, "Der Stapelname ist zu lang."),
 				new StrValidator({
 					min: null,
 					max: null,
 					regex: /^[A-Za-z0-9_-]*$/
-				}, "Invalid characters in queue name."),
+				}, "Unerlaubte Zeichen im Stapelnamen."),
 				new BlacklistValidator({
 					bl: queues
-				}, "This queue already exists.")]
+				}, "Dieser Stapel existiert bereits.")]
 			)
 		}).then((value) => {
 			this.trigger(
@@ -217,7 +217,7 @@ class QueueSelector {
 				null,
 				() => {
 					this.state.queue.selected = false;
-					this.select.set_button_html('Queue');
+					this.select.set_button_html('Stapel');
 					this.update();
 				},
 				null
