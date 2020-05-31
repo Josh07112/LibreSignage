@@ -8,10 +8,10 @@ use libresignage\common\php\Config;
 	<div class="container-fluid">
 		<span>
 			DHBW LibreSignage <?php echo Config::config('LS_VER'); ?> &bull;
-			Copyright <?php echo '2020-'.date('Y'); ?> Eero Talus, modifiziert und adaptiert von Claudio Gerth, Markus Tümmel und Joshua Jenkins
+			Copyright <?php echo '2018-'.date('Y'); ?> Eero Talus, modifiziert von Joshua Jenkins
 			</br>
 			<a href="<?php echo Config::config('README_PAGE'); ?>">LibreSignage</a>
-			ist kostenlos und Open-Source Software.
+			ist kostenlos und Open-Source.
 		</span>
 	</div>
 </footer>
