@@ -217,7 +217,7 @@ class QueueSelector {
 				null,
 				() => {
 					this.state.queue.selected = false;
-					this.select.set_button_html('Stapel');
+					this.select.set_button_html('Anzeigestapel');
 					this.update();
 				},
 				null
