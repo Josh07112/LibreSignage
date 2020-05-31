@@ -16,7 +16,7 @@ LOG_DIR='/var/log/libresignage'
 BLOCKED_PATHS='data|common|config';
 
 # LibreSignage version information.
-LS_VER=`git describe --always --tags --dirty`;
+LS_VER=`Beta 1.1`;
 API_VER=2;
 
 if [ -z "$SUDO_USER" ]; then
