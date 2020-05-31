@@ -333,7 +333,7 @@ class DisplayView extends BaseView {
 
 		dialog.dialog(
 			dialog.TYPE.SELECT,
-			'Select a queue',
+			'Anzeigestapel auswählen',
 			'',
 			(status, val) => {
 				if (!status) { return; }
