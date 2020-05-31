@@ -24,7 +24,7 @@ final class Queue extends Exportable {
 	private $owner     = '';
 	private $slides    = [];
 	private $slide_ids = [];
-	
+
 	public function __exportable_set(string $name, $value) {
 		$this->{$name} = $value;
 	}
@@ -54,7 +54,7 @@ final class Queue extends Exportable {
 	*/
 	public function load(string $name) {
 		if (!self::exists($name)) {
-			throw new QueueNotFoundException("Queue '{$name}' doesn't exist.");
+			throw new QueueNotFoundException("Queue '{$name}' existiert nicht.");
 		}
 
 		$this->fimport(self::get_path($name));
