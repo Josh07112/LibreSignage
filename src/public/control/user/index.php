@@ -80,7 +80,7 @@
 					<input id="user-save"
 						class="btn btn-primary w-100"
 						type="button"
-						value="Save">
+						value="Speichern">
 					</input>
 				</div>
 
