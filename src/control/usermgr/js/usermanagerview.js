@@ -82,8 +82,8 @@ class UserManagerView extends BaseView {
 		*/
 		dialog.dialog(
 			dialog.TYPE.PROMPT,
-			'Create a new user',
-			'Enter a name for the new user.',
+			'Neuen Benutzer erstellen',
+			'Geben Sie den Namen für den neuen Benutzer ein.',
 			async (status, val) => {
 				let user = null;
 

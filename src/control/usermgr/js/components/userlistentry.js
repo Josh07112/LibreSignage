@@ -29,7 +29,7 @@ const user_list_entry = (name, password) => `
 						<td>
 							<label
 								for="${name}-name">
-								Username
+								Benutzername
 							</label>
 						</td>
 						<td>
@@ -46,7 +46,7 @@ const user_list_entry = (name, password) => `
 						<td>
 							<label
 								for="${name}-password">
-								Password
+								Passwort
 							</label>
 						</td>
 						<td>
@@ -63,7 +63,7 @@ const user_list_entry = (name, password) => `
 						<td>
 							<label
 								for="${name}-groups">
-								Groups
+								Gruppen
 							</label>
 						</td>
 						<td>
@@ -103,7 +103,7 @@ class UserListEntry {
 		// Create the UserListEntry HTML.
 		$(this.container).append(user_list_entry(
 			name,
-			pass != null ? pass : '(Hidden)'
+			pass != null ? pass : '******'
 		));
 
 		// Initialize the groups MultiSelect.
@@ -123,14 +123,14 @@ class UserListEntry {
 						min: null,
 						max: this.api.limits.MAX_USER_GROUP_LEN,
 						regex: null
-					}, 'The group name is too long.'
+					}, 'Der Gruppename ist zu lang.'
 				),
 				new StrValidator(
 					{
 						min: null,
 						max: null,
 						regex: /^[A-Za-z0-9_]*$/
-					}, 'The group name contains invalid characters.'
+					}, 'Der Gruppename enthält unzulässige Zeichen.'
 				)
 			],
 			{

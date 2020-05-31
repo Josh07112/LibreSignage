@@ -8,7 +8,7 @@ return [
 	// Quota for the maximum number of slides per user.
 	'slides' => [
 		'limit' => 10,
-		'description' => 'Slides'
+		'description' => 'Folienquote'
 	],
 
 	// API rate limiting quota. The limit is in calls/API_RATE_T which
@@ -16,6 +16,6 @@ return [
 	// in the config file, although you probably don't want to change it.
 	'api_rate' => [
 		'limit' => 500,
-		'description' => 'API rate quota'
+		'description' => 'Anzeigequote'
 	]
 ];
