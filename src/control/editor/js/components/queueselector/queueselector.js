@@ -80,7 +80,7 @@ class QueueSelector {
 		this.select = new DropSelect(
 			this.container.find('.q-select')[0]
 		);
-		this.select.set_button_html('Stapel');
+		this.select.set_button_html('Anzeigestapel');
 
 		await this.update_queue_list();
 		this.update();
