@@ -9,18 +9,18 @@ const session_row = (who, from, created, cur) => `
 			<td>${who}</td>
 		</tr>
 		<tr>
-			<th class="text-right">IP:</th>
+			<th class="text-right">IP-Adresse:</th>
 			<td>${from}</td>
 		</tr>
 		<tr>
-			<th class="text-right">Renewed:</th>
+			<th class="text-right">Erneuert:</th>
 			<td>${new Date(created).toUTCString()}</td>
 		</tr>
 		<tr>
-			<th class="text-right">Your session:</th>
+			<th class="text-right">Ihre Sitzung:</th>
 			<td>
-				<span style="color: green;">${cur ? "Yes" : ""}</span>
-				<span style="color: red;">${cur ? "" : "No"}</span>
+				<span style="color: green;">${cur ? "Ja" : ""}</span>
+				<span style="color: red;">${cur ? "" : "Nein"}</span>
 			</td>
 		</tr>
 </table></td>

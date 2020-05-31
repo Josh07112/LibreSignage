@@ -54,7 +54,7 @@
 								id="input-pass"
 								type="password"
 								name="pass"
-								placeholder="Password">
+								placeholder="Passwort">
 						</div>
 					</div>
 					<div class="form-group form-row">
